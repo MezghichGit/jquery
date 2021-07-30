@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+            body{
+                margin:20px
+            }
+        </style>
+</head>
+<body>
+    
+<div class="container">
+    <div class="row">
+        <div class="col-4"><button id="html" class="btn btn-primary">HTML C'est quoi?</button></div>
+        <div class="col-4"><button id="css" class="btn btn-warning">CSS C'est quoi?</button></div>
+        <div class="col-4"><button id="js" class="btn btn-danger">JAVASCRIPT C'est quoi?</button></div>
+    </div>
+
+    <div class="row" style="margin-top:20px">
+        <div class="col-4"><div id="defHtml" style="border:solid 2px blue">HTML C'est quoi?</div></div>
+        <div class="col-4"><div id="defCss" style="border:solid 2px orange" >CSS C'est quoi?</div></div>
+        <div class="col-4"><div id="defJs" style="border:solid 2px red">JAVASCRIPT C'est quoi?</div></div>
+    </div>
+</div>
+</body>
+<script language="javascript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+    
+    $(document).ready(function(){
+
+        $("#defHtml,#defCss,#defJs").hide();
+
+        // les actions ci-après seront exécutés s'il y a un clic
+        
+        $("#html").click(function(){
+   
+          $("#defHtml").toggle();
+
+        });
+
+        $("#css").click(function(){
+            $("#defCss").toggle();
+          });
+
+
+        $("#js").click(function(){
+          $("#defJs").toggle();
+          });
+      });
+
+    
+
+
+</script>
+</body>
+</html>
