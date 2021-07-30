@@ -1,16 +1,48 @@
 <html>
 <head>
-<script language="javascript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
-<script language="javascript" type="text/javascript">
 
-    $(document).ready(function(){
-
-        alert("Hello jquery");
-    });
-
-</script>
 </head>
 <body>
+    
+<button>Toggle</button>
+<p id="1">This is a paragraph with little content1.</p>
+<p id="2">This is another small paragraph2.</p>
+<p id="3">This is another small paragraph3.</p>
+<p id="4">This is another small paragraph4.</p>
 
+
+</body>
+<!--script language="javascript" type="text/javascript" src="jquery-3.6.0.min.js"></!--script-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script language="javascript" type="text/javascript">
+    
+    $(document).ready(function(){
+        
+        $("button").click(function(){
+          $("p[id=2]").toggle();
+        });
+      });
+
+    // méthode 1
+    /*$(document).ready(function(){
+
+        alert("Hello jquery");
+    });*/
+
+    // méthode 2
+/*
+    $(document).ready(home);
+
+
+    function home(){
+
+        //alert("Hello jquery");
+        $("p").dblclick(function(){
+            $(this).hide();
+          });
+    }*/
+
+</script>
 </body>
 </html>
