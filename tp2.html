@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <style>
+            body{
+                margin:20px
+            }
+        </style>
+</head>
+<body>
+    
+    <p id="p1" style="border:solid 2px blue;"><b><i>HTML</i></b> C'est quoi?</p>
+
+    <br/>
+
+    <p id="p2" style="border:solid 2px blue;">Javascript C'est quoi?</p>
+
+    <br/>
+    <p id="p3" style="border:solid 2px blue;"><b><i>HTML</i></b> au autre paragraph?</p>
+
+</body>
+<script language="javascript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
+
+<script language="javascript" type="text/javascript">
+    
+    $(document).ready(function(){
+
+       $("p").click(function (){
+           // lecture
+          //alert($("#p1").html());
+          //alert($("#p1").text());
+
+         // alert($("#p1").html());
+
+          //$("#p1").text("Langage de structuration")
+         // $("#p1").prepend("<i><b>Langage</b></i> de structuration");
+
+        // $("<span>(Fin de paragraphe)</span>").appendTo($("#p1"));
+
+        //$("p").remove($("p:contains('HTML')"));
+        //$(this).remove();
+
+        $("p:contains('HTML')").remove();
+
+
+       });
+
+       
+
+       
+      });
+
+    
+
+
+</script>
+</body>
+</html>
